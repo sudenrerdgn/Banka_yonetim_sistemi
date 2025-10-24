@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Hesap { // diğer hesap türlerinin temel sınıfıdır
+public abstract class Hesap implements HesapIslemleri { // diğer hesap türlerinin temel sınıfıdır
     
     protected int hesapNo;
     protected double bakiye;
@@ -105,7 +105,7 @@ public abstract class Hesap { // diğer hesap türlerinin temel sınıfıdır
         }
     }
 
-    // hesap özeit metodumuz
+    // hesap özeti metodumuz
 
     public void hesapOzeti()
     {
