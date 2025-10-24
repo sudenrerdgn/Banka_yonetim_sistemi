@@ -5,7 +5,7 @@
 
 Bu proje, Nesne Yönelimli Programlama (OOP) ilkelerine uygun olarak geliştirilmiş basit bir banka yönetim sistemidir.
 Konsol tabanlı bu uygulamada kullanıcılar şube, müşteri ve hesap işlemlerini menü üzerinden gerçekleştirebilir.
-Proje Java dilinde yazılmış olup sınıf, nesne, kapsülleme, kalıtım, çok biçimlilik gibi temel OOP kavramlarını içermektedir.
+Proje, Java dilinde yazılmış olup sınıf, nesne, kapsülleme, kalıtım ve çok biçimlilik gibi temel OOP kavramlarını içermektedir.
 
 
 ⚙️ Özellikler
@@ -19,9 +19,10 @@ Proje Java dilinde yazılmış olup sınıf, nesne, kapsülleme, kalıtım, çok
 -Müşteri bilgilerini listeleme
 
 💳 Hesap Yönetimi
--Müşteri adına vadesiz veya vadeli hesap açma
+-Müşteri adına vadesiz, vadeli veya döviz hesabı açma
 -Hesap türüne göre farklı işlem özellikleri
--Hesaplar arası para aktarımı
+-Hesaplar arası para transferi yapabilme
+-Tüm hesapları listeleme
 
 💰 İşlem Özellikleri
 -Para yatırma
@@ -54,7 +55,9 @@ Sube:	Banka şubesi bilgisini tutar ve şubeye bağlı müşterileri listeler.
 7. Hesap Özeti Görüntüle
 8. Şube Ekle
 9. Şubeleri Listele
-0. exit
+10. Hesapları Listele
+0. Exit
+
 Seçiminiz: _
 
 
