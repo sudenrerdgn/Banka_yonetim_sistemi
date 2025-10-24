@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Musteri {
+public class Musteri implements HesapSahibi {
     private String adSoyad;
     private String tc;
     private String telefon;
@@ -63,6 +63,29 @@ public class Musteri {
     public String toString()
     {
         return "Müşteri: "+ adSoyad+"\ntc: "+tc+"\ntel: "+telefon+"\ne-mail: "+email+"Şube: " + (sube != null ? sube.getSubeAdi() : "Yok");
+    }
+
+
+    @Override
+    public void hesaplariListele() {
+        if (hesaplar.isEmpty()) {
+            System.out.println("Bu müşteriye ait hesap bulunmuyor.");
+        } else {
+            System.out.println("\n" + adSoyad + " adlı müşterinin hesapları:");
+            for (Hesap h : hesaplar) {
+                System.out.println(h);
+            }
+        }
+    }
+
+
+    @Override
+    public double toplamBakiyeGoster() {
+        double toplam = 0;
+        for (Hesap h : hesaplar) {
+            toplam += h.getBakiye();
+        }
+        return toplam;
     }
     
 
